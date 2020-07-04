@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50A1086F24A719F900CAA702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A1086E24A719F900CAA702 /* AppDelegate.swift */; };
+		50A1087124A719F900CAA702 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A1087024A719F900CAA702 /* SceneDelegate.swift */; };
+		50A1087324A719F900CAA702 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A1087224A719F900CAA702 /* ViewController.swift */; };
+		50A1087624A719F900CAA702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50A1087424A719F900CAA702 /* Main.storyboard */; };
+		50A1087824A71A0100CAA702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50A1087724A71A0100CAA702 /* Assets.xcassets */; };
+		50A1087B24A71A0100CAA702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50A1087924A71A0100CAA702 /* LaunchScreen.storyboard */; };
+		50E374C724A71C7800B00B88 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E374C624A71C7800B00B88 /* VideoCapture.swift */; };
+		50E374CA24A7F93B00B00B88 /* AVCaptureVideoOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E374C924A7F93B00B00B88 /* AVCaptureVideoOrientation.swift */; };
+		50E374CC24A8447500B00B88 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 50E374CB24A8447400B00B88 /* PoseNetMobileNet075S16FP16.mlmodel */; };
+		50E374CF24A8736F00B00B88 /* PoseNetInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E374CE24A8736F00B00B88 /* PoseNetInput.swift */; };
+		50E374D124A9BAAF00B00B88 /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E374D024A9BAAF00B00B88 /* CGPoint+Extension.swift */; };
+		50E374D424A9BADA00B00B88 /* CGImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E374D324A9BADA00B00B88 /* CGImage+Extension.swift */; };
+		50E374D624A9BE2C00B00B88 /* PoseNetOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E374D524A9BE2C00B00B88 /* PoseNetOutput.swift */; };
+		50E374D824A9CF1600B00B88 /* Joint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E374D724A9CF1600B00B88 /* Joint.swift */; };
+		50E374DB24AA77C400B00B88 /* PoseNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E374DA24AA77C400B00B88 /* PoseNet.swift */; };
+		50E374DD24AA833F00B00B88 /* PoseBuilderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E374DC24AA833F00B00B88 /* PoseBuilderConfiguration.swift */; };
+		50E374DF24AA84BC00B00B88 /* Pose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E374DE24AA84BC00B00B88 /* Pose.swift */; };
+		50E374E124AA8BD500B00B88 /* PoseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E374E024AA8BD500B00B88 /* PoseBuilder.swift */; };
+		50E374E324AA9D6300B00B88 /* PoseBuilder+Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E374E224AA9D6300B00B88 /* PoseBuilder+Single.swift */; };
+		50E374E524AAA4BD00B00B88 /* PoseBuilder+Multiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E374E424AAA4BD00B00B88 /* PoseBuilder+Multiple.swift */; };
+		50E374E724AD1FCE00B00B88 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E374E624AD1FCE00B00B88 /* ConfigurationViewController.swift */; };
+		50E374E924AEFD1C00B00B88 /* PopupPresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E374E824AEFD1C00B00B88 /* PopupPresentationManager.swift */; };
+		50E374EB24AFC52B00B00B88 /* PoseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E374EA24AFC52B00B00B88 /* PoseImageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50A1086B24A719F900CAA702 /* posenet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = posenet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50A1086E24A719F900CAA702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50A1087024A719F900CAA702 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		50A1087224A719F900CAA702 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50A1087524A719F900CAA702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50A1087724A71A0100CAA702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50A1087A24A71A0100CAA702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50A1087C24A71A0100CAA702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50E374C624A71C7800B00B88 /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		50E374C924A7F93B00B00B88 /* AVCaptureVideoOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVCaptureVideoOrientation.swift; sourceTree = "<group>"; };
+		50E374CB24A8447400B00B88 /* PoseNetMobileNet075S16FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PoseNetMobileNet075S16FP16.mlmodel; sourceTree = "<group>"; };
+		50E374CE24A8736F00B00B88 /* PoseNetInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseNetInput.swift; sourceTree = "<group>"; };
+		50E374D024A9BAAF00B00B88 /* CGPoint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
+		50E374D324A9BADA00B00B88 /* CGImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Extension.swift"; sourceTree = "<group>"; };
+		50E374D524A9BE2C00B00B88 /* PoseNetOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseNetOutput.swift; sourceTree = "<group>"; };
+		50E374D724A9CF1600B00B88 /* Joint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joint.swift; sourceTree = "<group>"; };
+		50E374DA24AA77C400B00B88 /* PoseNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseNet.swift; sourceTree = "<group>"; };
+		50E374DC24AA833F00B00B88 /* PoseBuilderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseBuilderConfiguration.swift; sourceTree = "<group>"; };
+		50E374DE24AA84BC00B00B88 /* Pose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pose.swift; sourceTree = "<group>"; };
+		50E374E024AA8BD500B00B88 /* PoseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseBuilder.swift; sourceTree = "<group>"; };
+		50E374E224AA9D6300B00B88 /* PoseBuilder+Single.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PoseBuilder+Single.swift"; sourceTree = "<group>"; };
+		50E374E424AAA4BD00B00B88 /* PoseBuilder+Multiple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PoseBuilder+Multiple.swift"; sourceTree = "<group>"; };
+		50E374E624AD1FCE00B00B88 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
+		50E374E824AEFD1C00B00B88 /* PopupPresentationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupPresentationManager.swift; sourceTree = "<group>"; };
+		50E374EA24AFC52B00B00B88 /* PoseImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseImageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50A1086824A719F900CAA702 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50A1086224A719F900CAA702 = {
+			isa = PBXGroup;
+			children = (
+				50A1086D24A719F900CAA702 /* posenet */,
+				50A1086C24A719F900CAA702 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50A1086C24A719F900CAA702 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50A1086B24A719F900CAA702 /* posenet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50A1086D24A719F900CAA702 /* posenet */ = {
+			isa = PBXGroup;
+			children = (
+				50A1086E24A719F900CAA702 /* AppDelegate.swift */,
+				50A1087024A719F900CAA702 /* SceneDelegate.swift */,
+				50A1087224A719F900CAA702 /* ViewController.swift */,
+				50E374E624AD1FCE00B00B88 /* ConfigurationViewController.swift */,
+				50A1087424A719F900CAA702 /* Main.storyboard */,
+				50A1087724A71A0100CAA702 /* Assets.xcassets */,
+				50A1087924A71A0100CAA702 /* LaunchScreen.storyboard */,
+				50E374CD24A844DD00B00B88 /* Model */,
+				50A1087C24A71A0100CAA702 /* Info.plist */,
+				50E374C824A71C8300B00B88 /* Utils */,
+				50E374D224A9BAB600B00B88 /* Extension+Types */,
+				50E374D924A9CF1B00B00B88 /* Pose */,
+				50E374E824AEFD1C00B00B88 /* PopupPresentationManager.swift */,
+				50E374EA24AFC52B00B00B88 /* PoseImageView.swift */,
+			);
+			path = posenet;
+			sourceTree = "<group>";
+		};
+		50E374C824A71C8300B00B88 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				50E374C624A71C7800B00B88 /* VideoCapture.swift */,
+				50E374C924A7F93B00B00B88 /* AVCaptureVideoOrientation.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		50E374CD24A844DD00B00B88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				50E374CB24A8447400B00B88 /* PoseNetMobileNet075S16FP16.mlmodel */,
+				50E374CE24A8736F00B00B88 /* PoseNetInput.swift */,
+				50E374D524A9BE2C00B00B88 /* PoseNetOutput.swift */,
+				50E374DA24AA77C400B00B88 /* PoseNet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		50E374D224A9BAB600B00B88 /* Extension+Types */ = {
+			isa = PBXGroup;
+			children = (
+				50E374D024A9BAAF00B00B88 /* CGPoint+Extension.swift */,
+				50E374D324A9BADA00B00B88 /* CGImage+Extension.swift */,
+			);
+			path = "Extension+Types";
+			sourceTree = "<group>";
+		};
+		50E374D924A9CF1B00B00B88 /* Pose */ = {
+			isa = PBXGroup;
+			children = (
+				50E374D724A9CF1600B00B88 /* Joint.swift */,
+				50E374DC24AA833F00B00B88 /* PoseBuilderConfiguration.swift */,
+				50E374DE24AA84BC00B00B88 /* Pose.swift */,
+				50E374E024AA8BD500B00B88 /* PoseBuilder.swift */,
+				50E374E224AA9D6300B00B88 /* PoseBuilder+Single.swift */,
+				50E374E424AAA4BD00B00B88 /* PoseBuilder+Multiple.swift */,
+			);
+			path = Pose;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50A1086A24A719F900CAA702 /* posenet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50A1087F24A71A0100CAA702 /* Build configuration list for PBXNativeTarget "posenet" */;
+			buildPhases = (
+				50A1086724A719F900CAA702 /* Sources */,
+				50A1086824A719F900CAA702 /* Frameworks */,
+				50A1086924A719F900CAA702 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = posenet;
+			productName = posenet;
+			productReference = 50A1086B24A719F900CAA702 /* posenet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50A1086324A719F900CAA702 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Evergreen Technologies";
+				TargetAttributes = {
+					50A1086A24A719F900CAA702 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 50A1086624A719F900CAA702 /* Build configuration list for PBXProject "posenet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50A1086224A719F900CAA702;
+			productRefGroup = 50A1086C24A719F900CAA702 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50A1086A24A719F900CAA702 /* posenet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50A1086924A719F900CAA702 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A1087B24A71A0100CAA702 /* LaunchScreen.storyboard in Resources */,
+				50A1087824A71A0100CAA702 /* Assets.xcassets in Resources */,
+				50A1087624A719F900CAA702 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50A1086724A719F900CAA702 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50E374D424A9BADA00B00B88 /* CGImage+Extension.swift in Sources */,
+				50E374CA24A7F93B00B00B88 /* AVCaptureVideoOrientation.swift in Sources */,
+				50E374C724A71C7800B00B88 /* VideoCapture.swift in Sources */,
+				50E374D624A9BE2C00B00B88 /* PoseNetOutput.swift in Sources */,
+				50E374D824A9CF1600B00B88 /* Joint.swift in Sources */,
+				50E374E724AD1FCE00B00B88 /* ConfigurationViewController.swift in Sources */,
+				50E374CC24A8447500B00B88 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */,
+				50E374E524AAA4BD00B00B88 /* PoseBuilder+Multiple.swift in Sources */,
+				50E374DB24AA77C400B00B88 /* PoseNet.swift in Sources */,
+				50E374E124AA8BD500B00B88 /* PoseBuilder.swift in Sources */,
+				50E374DD24AA833F00B00B88 /* PoseBuilderConfiguration.swift in Sources */,
+				50E374DF24AA84BC00B00B88 /* Pose.swift in Sources */,
+				50A1087324A719F900CAA702 /* ViewController.swift in Sources */,
+				50E374CF24A8736F00B00B88 /* PoseNetInput.swift in Sources */,
+				50E374E924AEFD1C00B00B88 /* PopupPresentationManager.swift in Sources */,
+				50A1086F24A719F900CAA702 /* AppDelegate.swift in Sources */,
+				50E374D124A9BAAF00B00B88 /* CGPoint+Extension.swift in Sources */,
+				50E374E324AA9D6300B00B88 /* PoseBuilder+Single.swift in Sources */,
+				50A1087124A719F900CAA702 /* SceneDelegate.swift in Sources */,
+				50E374EB24AFC52B00B00B88 /* PoseImageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50A1087424A719F900CAA702 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50A1087524A719F900CAA702 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50A1087924A71A0100CAA702 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50A1087A24A71A0100CAA702 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50A1087D24A71A0100CAA702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50A1087E24A71A0100CAA702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50A1088024A71A0100CAA702 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BM6YF5EXFJ;
+				INFOPLIST_FILE = posenet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.evergreentech.posenet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50A1088124A71A0100CAA702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BM6YF5EXFJ;
+				INFOPLIST_FILE = posenet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.evergreentech.posenet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50A1086624A719F900CAA702 /* Build configuration list for PBXProject "posenet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50A1087D24A71A0100CAA702 /* Debug */,
+				50A1087E24A71A0100CAA702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50A1087F24A71A0100CAA702 /* Build configuration list for PBXNativeTarget "posenet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50A1088024A71A0100CAA702 /* Debug */,
+				50A1088124A71A0100CAA702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50A1086324A719F900CAA702 /* Project object */;
+}
